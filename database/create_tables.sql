@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS FoodWasteManagement;
+USE FoodWasteManagement;
+
 CREATE TABLE Donor (
     donor_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
@@ -65,3 +68,5 @@ CREATE TABLE Distribution (
     FOREIGN KEY (ngo_id) REFERENCES NGO(ngo_id)
     ON DELETE CASCADE
 );
+
+show tables;
